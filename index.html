@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Call Prank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="setup" id="setup">
+  <h1>📞 Fake Call Prank</h1>
+
+  <input type="text" id="callerName" placeholder="Caller Name" value="Unknown Caller">
+
+  <input type="number" id="delay" value="10" min="1" placeholder="Delay (seconds)">
+
+  <input type="file" id="callerImage" accept="image/*">
+
+  <button id="startBtn">Start Fake Call</button>
+</div>
+
+<div class="call-screen hidden" id="callScreen">
+
+  <img id="photo" src="https://via.placeholder.com/200" alt="Caller">
+
+  <h2 id="name">Unknown Caller</h2>
+
+  <p>Incoming Call...</p>
+
+  <div class="buttons">
+    <button id="decline" class="red">Decline</button>
+    <button id="accept" class="green">Accept</button>
+  </div>
+
+</div>
+
+<audio id="ringtone" loop>
+  <source src="ringtone.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
